@@ -114,7 +114,7 @@ public class DriveBaseTalon extends SubsystemBase {
     leftEncVel = _left1.getSelectedSensorVelocity() * Constants.kEncDistPerPulse;
     rightEncVel = _right1.getSelectedSensorVelocity() * Constants.kEncDistPerPulse;
     
-    //m_odometry.update(m_gyro.getRotation2d(), leftEncPos, rightEncPos);
+    m_odometry.update(m_gyro.getRotation2d(), leftEncPos, rightEncPos);
     //m_odometry.resetPosition(m_gyro.getRotation2d(), leftEncPos, rightEncPos, getPose());
     
     // This method will be called once per scheduler run
